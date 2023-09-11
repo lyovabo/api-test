@@ -66,6 +66,11 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "husky": {
+      "hooks": {
+        "pre-commit": "pretty-quick --staged && npm run lint"
+      }
+    }
   }
 }
