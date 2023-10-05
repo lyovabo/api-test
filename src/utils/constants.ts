@@ -1,0 +1,18 @@
+const TYPEORM_HOST = process.env.TYPEORM_HOST;
+const TYPEORM_PORT = process.env.TYPEORM_PORT;
+const TYPEORM_USER = process.env.TYPEORM_USER;
+const TYPEORM_PASSWORD = process.env.TYPEORM_PASSWORD;
+const TYPEORM_DB = process.env.TYPEORM_DB;
+// add swagger credentials
+const SWAGGER_USERNAME = process.env.SWAGGER_USERNAME;
+const SWAGGER_PASSWORD = process.env.SWAGGER_PASSWORD;
+
+export {
+  TYPEORM_HOST,
+  TYPEORM_PORT,
+  TYPEORM_USER,
+  TYPEORM_PASSWORD,
+  TYPEORM_DB,
+  SWAGGER_USERNAME,
+  SWAGGER_PASSWORD,
+};
