@@ -9,7 +9,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
   ],
   root: true,
   env: {
@@ -18,7 +17,8 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    // "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-unused-vars": 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -26,5 +26,7 @@ module.exports = {
     'import/order': 'error',
     'newline-before-return': 'error',
     'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    "@typescript-eslint/ban-ts-ignore": "off",
   },
 };
